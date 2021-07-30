@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
-import { Graficas1Component } from '../shared/graficas1/graficas1.component';
+import { Graficas1Component } from './graficas1/graficas1.component';
 
 
 const PagesRoute: Routes = [
