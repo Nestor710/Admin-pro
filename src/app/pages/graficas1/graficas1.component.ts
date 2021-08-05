@@ -25,7 +25,7 @@ export class Graficas1Component implements OnInit {
       'labels': ['Si', 'No'],
       'data':  [95, 5],
       'type': 'doughnut',
-      'leyenda': '¿Le dan gases los frijoles?'
+      'leyenda': '¿Le dan gases las caraotas?'
     },
     'grafico4': {
       'labels': ['No', 'Si'],

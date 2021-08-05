@@ -7,6 +7,8 @@ import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages.routes';
 import { ComponentsModule } from '../components/components.module';
 import { Graficas1Component } from './graficas1/graficas1.component';
+import { AcountSettingsComponent } from './acount-settings/acount-settings.component';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -15,6 +17,7 @@ import { Graficas1Component } from './graficas1/graficas1.component';
     DashboardComponent,
     ProgressComponent,
     Graficas1Component,
+    AcountSettingsComponent,
   ],
   exports: [
     PagesComponent,
@@ -25,7 +28,8 @@ import { Graficas1Component } from './graficas1/graficas1.component';
   imports: [
     SharedModule,
     PAGES_ROUTES,
-    ComponentsModule
+    ComponentsModule,
+    CommonModule
   ]
 })
 export class PagesModule { }
