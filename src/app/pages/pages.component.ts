@@ -12,7 +12,7 @@ export class PagesComponent implements OnInit {
 
   constructor( public _ajustes:SettingsService ) { }
 
-  
+ 
   ngOnInit(): void {
     init_plugins();
   }

@@ -1,4 +1,5 @@
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import { SharedService } from '../../services/shared/shared.service';
 
 @Component({
   selector: 'app-incrementador',
@@ -13,7 +14,7 @@ export class IncrementadorComponent implements OnInit {
   @Output() cambioValor: EventEmitter<number> = new EventEmitter();
 
 
-  constructor() { }
+  constructor( private _sharedS: SharedService ) { }
 
   ngOnInit(): void {
   }
@@ -41,7 +42,7 @@ export class IncrementadorComponent implements OnInit {
     }
     this.progreso = this.progreso + valor;
     this.cambioValor.emit( this.progreso );
-  }
 
+  }
 
 }
